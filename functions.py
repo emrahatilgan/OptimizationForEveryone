@@ -35,7 +35,7 @@ def selectFunction(cbIndex):
     }
         return switcher.get(cbIndex, "nothing")
 
-def ackley( x, a=20, b=0.2, c=2*pi ):
+def ackley( x, a=0, b=0.2, c=2*pi ):
     x = np.asarray_chkfinite(x)  # ValueError if any NaN or Inf
     n = len(x)
     s1 = sum( x**2 )
